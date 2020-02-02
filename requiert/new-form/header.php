@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <?php 
 	include('./requiert/php-global.php');
+
+if (!isset($_SESSION['id'])) {
+	// header('Location: /connexion.html');
+	// exit();
+}
 ?>
+
 <head>
 
 <!-- Basic Page Needs
@@ -36,7 +42,7 @@
 				
 				<!-- Logo -->
 				<div id="logo">
-					<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+					<a href="accueil.php"><img src="assets/images/logo.png" alt=""></a>
 				</div>
 
 				<!-- Mobile Navigation -->
@@ -56,7 +62,7 @@
 						<li><a class="current" href="index.php">Accueil</a>
 						</li>
 
-						<li><a href="#">Boutique</a>
+						<li><a href="./boutique.php">Boutique</a>
 							<ul>
 								<li><a href="./mes-commandes.php"><i class="fa fa-1x fa-list"></i>Commandes</a>
 								</li>
@@ -75,7 +81,7 @@
 								</li>
 							</ul>
 						</li>
-						<li><a <?= isset($_SESSION['email_offre']) && $_SESSION['ip'] == $_SERVER['REMOTE_ADDR'] ? 'href="./missions.php"' : 'href="./infos.php"'?>>Livre d'Or</a>
+						<li><a <?= isset($_SESSION['email_offre']) && $_SESSION['ip'] == $_SERVER['REMOTE_ADDR'] ? 'href="./livredor.php"' : 'href="./infos.php"'?>>Livre d'Or</a>
 						</li>
 						
 					</ul>
@@ -90,7 +96,7 @@
 			<!-- Right Side Content / End -->
 			<div class="right-side">
 				<div class="header-widget">
-					<a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Deconnexion</a>
+					<a  href="index.php?action=logout" class="sign-in popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Deconnexion</a>
 
 					<a href="messagerie.php" title="" class="sign-in popup-with-zoom-anim"><i class="fa fa-envelope mes"></i>
 						<span class="message_circle mes-text">0</span>
