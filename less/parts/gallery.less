@@ -1,0 +1,163 @@
+ul.multishop-gallery-sections {
+	top: -61px;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	right: 0;
+	width: auto;
+	max-width: 63%;
+	overflow: hidden;
+	height: auto;
+	padding: 9px 15px 9px 15px;
+}
+ul.multishop-gallery-sections li {
+	padding: 0 0 10px 40px;
+}
+ul.multishop-gallery {
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	list-style: none;
+}
+.multishop-gallery:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+.multishop-gallery li {
+	width: 33.33333333%;
+	margin: 0;
+	float: left;
+	padding: 0;
+	position: relative;
+}
+.multishop-gallery li a {
+	display: block;
+	padding: 0;
+	transition: all 0.3s ease-in-out 0s;
+	height: 100%;
+	border: none;
+	position: relative;
+}
+.multishop-gallery li a span {
+	display: block;
+	position: relative;
+	width: 100%;
+	-ms-transform: scale3d(1,1,1);
+	-o-transform: scale3d(1,1,1);
+	-moz-transform: scale3d(1,1,1);
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+	transition: transform 0.6s;
+	height: 100%;
+}
+.multishop-gallery li a img {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.multishop-gallery li a:after {
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	content: '';
+	bottom: 0;
+	background-color: rgba(42,44,61,0.6);
+	transition: all 0.6s;
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+	transition: transform 0.6s;
+}
+.multishop-gallery li a:before {
+	transition: all 0.4s;
+	position: absolute;
+	left: 50%;
+	color: #fff !important;
+	top: 50%;
+	margin: -25px 0 0 -25px;
+	font-size: 24px;
+	text-align: center;
+	box-sizing: border-box;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	z-index: 4;
+	font-size: 40px;
+	font-weight: 700;
+	content: "";
+	opacity: 0;
+	background: @color_primary;
+	background: fade(@color_primary, 95%) url(../img/zoom.png) no-repeat center center;
+	border-radius: 80px;
+}
+.multishop-gallery li a.multishop-gallery-video:before {
+	content: "\f04b";
+	opacity: 1;
+	font-size: 24px;
+	font-weight: normal;
+	font-family: FontAwesome;
+	padding: 0 0 0 6px;
+	background: fade(@color_primary, 95%);
+}
+.multishop-gallery li a:hover:before {
+	opacity: 1;
+}
+.multishop-gallery li a:hover:after {
+	opacity: 1;
+	-ms-transform: scale3d(1.1,1.1,1);
+	-o-transform: scale3d(1.1,1.1,1);
+	-moz-transform: scale3d(1.1,1.1,1);
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+.multishop-gallery li a:hover span {
+	z-index: 3;
+	-ms-transform: scale3d(1.1,1.1,1);
+	-o-transform: scale3d(1.1,1.1,1);
+	-moz-transform: scale3d(1.1,1.1,1);
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+p.multishop-gallery-more {
+	font-size: 15px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+p.multishop-gallery-more a {
+	display: block;
+	color: #fff;
+	border: none;
+	transition: all 0.2s;
+	background-color: @color_primary;
+	font-weight: 500;
+	padding: 14px 0 15px;
+}
+p.multishop-gallery-more a:hover {
+	background-color: lighten(@color_primary, 5%);
+}
+p.multishop-gallery-more a.loading {
+	opacity: 0.4;
+	cursor: default;
+	border-bottom: 1px dotted @color_text;
+}
+
+
+@media only screen and (max-width : 992px) {
+	.multishop-gallery li {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width : 550px) {
+	.multishop-gallery li {
+		width: 100%;
+		float: none;
+		max-width: 390px;
+		margin: 0 auto;
+	}
+}

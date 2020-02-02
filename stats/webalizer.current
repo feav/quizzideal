@@ -1,0 +1,721 @@
+# Webalizer V2.23-08 Incremental Data - 03/06/2019 23:47:12
+2019 3 6 23 47 12
+267 267 117 52 16 36 225942 160 130 0 0 0
+16 4 29 1 6
+81 81 69341 31 41 31 0 0
+53 53 46584 21 31 23 0 0
+40 40 32784 28 25 21 0 0
+27 27 21378 22 18 18 0 0
+42 42 36632 22 28 21 0 0
+24 24 19223 16 17 16 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+11 11 8574 8 0 0
+9 9 7164 8 0 0
+17 17 14683 10 0 0
+16 16 14411 9 0 0
+14 14 11916 8 0 0
+12 12 9655 6 0 0
+4 4 3059 4 0 0
+3 3 2363 2 0 0
+9 9 6979 5 0 0
+4 4 3096 3 0 0
+9 9 7496 6 0 0
+13 13 11533 11 0 0
+10 10 7768 5 0 0
+5 5 3940 3 0 0
+12 12 11113 6 0 0
+7 7 5404 5 0 0
+13 13 10019 10 0 0
+5 5 3772 4 0 0
+9 9 7590 6 0 0
+41 41 39008 18 0 0
+8 8 6191 5 0 0
+20 20 17416 8 0 0
+6 6 5024 4 0 0
+10 10 7768 6 0 0
+0
+0
+0
+267
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/wordpress/wp-includes/wlwmanifest.xml
+0 4 94136289686464 3888 0 0 0 0
+/wordpress/
+0 4 0 3888 0 0 0 0
+/web/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/mes-commandes.html
+0 1 0 788 1 1 0 0
+/wp1/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/css/dragon/style.css
+0 1 0 787 0 0 0 0
+/blog/
+0 4 0 3888 0 0 0 0
+/2016/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/javascript/js/user-board.js
+0 1 0 788 0 0 0 0
+/2015/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/css/dragon/vendor/simple-line-icons.css
+0 1 0 788 0 0 0 0
+/faq.html
+0 1 0 732 0 0 0 0
+/ads.txt
+0 5 0 3940 0 0 0 0
+/concoursOfferwalls.html
+0 1 0 732 1 0 0 0
+/2018/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/mentions-legales.html
+0 3 7881702204764677664 2437 3 0 0 0
+/wp-includes/wlwmanifest.xml
+0 4 7308339910404498720 3888 0 0 0 0
+/news/wp-includes/wlwmanifest.xml
+0 1 2338042655862777120 972 0 0 0 0
+/concoursMissions.html
+0 1 2314976052409557874 788 1 0 0 0
+/images/magasin/itunes.jpg
+1 1 3201607944355913829 788 0 0 0 0
+/javascript/js/vendor/jquery-3.1.0.min.js
+0 1 3472386570342899744 788 0 0 0 0
+/favicon.ico
+0 12 663280868016472933 9450 0 0 0 0
+/wp/wp-includes/wlwmanifest.xml
+0 4 0 3888 0 0 0 0
+/wp2/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/website/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/gagnants.html
+0 3 0 2364 3 0 0 0
+/test/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/wp-login.php
+0 3 0 2789 3 1 0 0
+/javascript/sweetalert.min.js
+0 1 0 787 0 0 0 0
+/site/wp-includes/wlwmanifest.xml
+0 4 0 3888 0 0 0 0
+/connexion.html
+0 4 0 3040 4 1 0 0
+/contact.html
+0 2 0 1649 2 0 0 0
+/sito/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/blog/robots.txt
+0 4 0 3888 0 0 0 0
+/xmlrpc.php
+0 8 0 7776 4 0 0 0
+/media/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/cms/wp-includes/wlwmanifest.xml
+0 4 0 3888 0 0 0 0
+/css/dragon/vendor/tooltipster.css
+0 1 0 788 0 0 0 0
+/
+0 115 0 92371 102 23 0 0
+/wp/
+0 4 0 3888 0 2 0 0
+/javascript/js/vendor/twitter/jquery.tweet.min.js
+0 1 0 787 0 0 0 0
+/shop/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/blog/wp-includes/wlwmanifest.xml
+0 4 0 3888 0 0 0 0
+/images/468x60.jpg
+1 1 0 788 0 0 0 0
+/images/
+0 1 0 936 1 0 0 0
+/robots.txt
+0 33 0 27888 0 0 0 0
+/2017/wp-includes/wlwmanifest.xml
+0 1 0 972 0 0 0 0
+/profil.html
+0 1 0 788 1 1 0 0
+/boutique.html
+0 4 0 3096 4 3 0 0
+/css/style.20180508.css
+0 1 0 787 0 0 0 0
+/IMAGES/468X60.JPG
+1 4 0 3152 0 0 0 0
+/js/mage/cookies.js
+0 2 0 1834 0 0 0 0
+# End Of Table - urls
+# -sites- (monthly)
+91.180.116.85
+0 2 2 1576 1 1551545133 0 0
+/
+92.136.202.37
+0 2 2 1575 1 1551602912 0 0
+/
+66.249.73.141
+0 1 1 788 1 1551810270 0 0
+/
+212.47.244.47
+0 1 1 788 1 1551576453 0 0
+/
+66.249.66.46
+0 4 4 3151 3 1551634605 0 0
+/
+104.244.73.126
+0 2 2 1464 2 1551731595 0 0
+/
+54.36.150.161
+0 1 1 732 1 1551673255 0 0
+/
+142.93.184.122
+0 1 1 788 1 1551877283 0 0
+/
+66.249.73.139
+0 2 2 1576 1 1551813559 0 0
+/
+40.77.167.115
+0 1 1 788 1 1551602584 0 0
+/
+54.36.148.116
+0 1 1 732 0 0 0 0
+-
+54.36.148.117
+0 1 1 732 0 0 0 0
+-
+66.249.69.110
+0 1 1 788 1 1551784749 0 0
+/
+178.17.174.14
+0 1 1 732 1 1551669770 0 0
+/
+157.55.39.181
+0 1 1 788 0 0 0 0
+-
+5.254.81.51
+0 2 2 1872 2 1551739946 0 0
+/images/
+54.36.148.115
+0 1 1 732 0 0 0 0
+-
+207.46.13.33
+0 1 1 788 1 1551906742 0 0
+/
+176.163.179.123
+0 2 2 1575 1 1551494976 0 0
+/
+52.53.201.78
+0 2 2 1464 2 1551751089 0 0
+/
+5.254.40.3
+0 1 1 936 1 1551895576 0 0
+/wp-login.php
+66.249.64.5
+0 3 3 2364 2 1551489096 0 0
+/
+91.68.163.222
+0 4 4 3152 0 0 0 0
+-
+66.249.69.108
+0 2 2 1576 1 1551750407 0 0
+/
+207.46.13.5
+0 1 1 788 1 1551873028 0 0
+/gagnants.html
+40.77.167.145
+0 2 2 1576 2 1551901577 0 0
+/mentions-legales.html
+54.208.14.244
+0 1 1 751 1 1551828490 0 0
+/
+51.77.229.148
+0 7 7 6805 1 1551815990 0 0
+/wp/
+66.249.64.108
+0 1 1 788 1 1551423354 0 0
+/
+185.255.112.137
+0 1 1 732 1 1551645178 0 0
+/
+35.163.200.147
+0 1 1 732 1 1551669252 0 0
+/
+107.178.236.6
+0 1 1 936 1 1551808961 0 0
+/
+66.249.93.219
+0 1 1 788 0 0 0 0
+-
+40.77.167.159
+0 1 1 788 1 1551540677 0 0
+/
+207.46.13.66
+0 1 1 788 0 0 0 0
+-
+180.167.221.138
+0 2 2 1502 2 1551913269 0 0
+/
+66.249.93.217
+0 2 2 1576 2 1551916032 0 0
+/
+66.249.75.135
+0 1 1 788 0 0 0 0
+-
+66.249.69.112
+0 3 3 2364 1 1551798011 0 0
+/
+66.249.75.131
+0 2 2 1576 2 1551781775 0 0
+/
+54.36.148.8
+0 1 1 732 1 1551631310 0 0
+/connexion.html
+157.55.39.7
+0 2 2 1576 2 1551669115 0 0
+/
+92.90.121.25
+0 1 1 788 0 0 0 0
+-
+119.23.69.93
+0 2 2 1834 0 0 0 0
+-
+185.104.120.5
+0 1 1 732 1 1551721265 0 0
+/
+207.46.13.197
+0 1 1 788 1 1551518165 0 0
+/
+207.46.13.22
+0 1 1 788 1 1551444291 0 0
+/concoursMissions.html
+209.17.97.90
+0 1 1 917 1 1551750077 0 0
+/
+66.249.66.205
+0 1 1 788 1 1551616553 0 0
+/
+207.46.13.250
+0 1 1 788 1 1551709998 0 0
+/
+66.249.64.109
+0 5 5 3937 0 0 0 0
+-
+54.36.148.110
+0 1 1 732 1 1551610057 0 0
+/connexion.html
+45.235.40.5
+0 1 1 732 1 1551716433 0 0
+/
+66.249.73.137
+0 1 1 788 1 1551823220 0 0
+/
+51.77.109.156
+0 9 9 8749 1 1551796331 0 0
+/
+66.249.64.201
+0 4 4 3152 3 1551528721 0 0
+/
+54.36.150.156
+0 1 1 732 0 0 0 0
+-
+54.218.127.214
+0 1 1 732 1 1551504402 0 0
+/
+66.249.64.1
+0 5 5 3939 3 1551532920 0 0
+/
+66.249.64.3
+0 1 1 788 1 1551523862 0 0
+/
+40.77.167.29
+0 2 2 1576 2 1551504579 0 0
+/
+144.76.4.41
+0 2 2 1890 1 1551845714 0 0
+/
+90.78.129.186
+0 5 5 3938 2 1551579859 0 0
+/
+54.36.150.30
+0 1 1 732 1 1551429712 0 0
+/
+46.118.155.61
+0 22 22 21385 1 1551468664 0 0
+/
+54.36.148.236
+0 1 1 732 1 1551453917 0 0
+/concoursOfferwalls.html
+66.249.66.48
+0 1 1 788 1 1551604000 0 0
+/
+40.77.167.222
+0 3 3 2364 1 1551473205 0 0
+/
+157.55.39.55
+0 2 2 1576 1 1551462957 0 0
+/
+66.249.64.205
+0 2 2 1576 2 1551475159 0 0
+/
+173.193.191.202
+0 1 1 788 1 1551556692 0 0
+/
+54.36.148.135
+0 1 1 732 1 1551400715 0 0
+/boutique.html
+157.55.39.15
+0 1 1 788 0 0 0 0
+-
+23.129.64.106
+0 1 1 732 1 1551715382 0 0
+/
+92.136.196.40
+0 2 2 1575 1 1551888396 0 0
+/
+157.55.39.25
+0 1 1 788 0 0 0 0
+-
+66.249.65.93
+0 2 2 1575 1 1551837036 0 0
+/
+207.46.13.102
+0 2 2 1576 1 1551798210 0 0
+/
+66.249.93.218
+0 2 2 1576 0 0 0 0
+-
+198.12.95.230
+0 21 21 20415 3 1551579019 0 0
+/wp/
+207.46.13.185
+0 2 2 1576 2 1551571267 0 0
+/
+207.180.221.167
+0 2 2 1890 1 1551590209 0 0
+/
+77.136.84.130
+0 2 2 1575 1 1551596977 0 0
+/
+85.167.102.9
+0 2 2 1890 1 1551758003 0 0
+/mentions-legales.html
+162.221.188.242
+0 1 1 917 1 1551813565 0 0
+/wp-login.php
+5.9.97.200
+0 3 3 2622 1 1551412998 0 0
+/faq.html
+66.249.66.201
+0 1 1 788 0 0 0 0
+-
+157.55.39.159
+0 1 1 788 1 1551619473 0 0
+/
+178.154.244.22
+0 4 4 3520 2 1551696583 0 0
+/
+34.222.233.212
+0 1 1 732 1 1551584309 0 0
+/
+128.90.106.250
+0 18 18 17498 2 1551561604 0 0
+/
+66.249.66.203
+0 1 1 788 1 1551572106 0 0
+/
+40.77.167.175
+0 1 1 788 1 1551622223 0 0
+/
+142.93.73.213
+0 1 1 788 1 1551457709 0 0
+/
+52.215.203.253
+0 1 1 751 1 1551487533 0 0
+/
+85.248.227.163
+0 1 1 732 1 1551677416 0 0
+/
+157.55.39.126
+0 1 1 788 1 1551416368 0 0
+/
+66.249.75.133
+0 2 2 1576 2 1551804887 0 0
+/gagnants.html
+159.65.178.20
+0 1 1 936 1 1551479987 0 0
+/
+18.191.95.43
+0 3 3 2364 1 1551401299 0 0
+/
+40.77.167.68
+0 1 1 788 1 1551404577 0 0
+/
+157.55.39.68
+0 1 1 788 1 1551803735 0 0
+/
+139.59.144.220
+0 1 1 788 1 1551775749 0 0
+/
+178.154.171.45
+0 4 4 3520 2 1551696583 0 0
+/
+66.249.64.203
+0 4 4 3152 3 1551539554 0 0
+/
+157.55.39.54
+0 4 4 3152 3 1551853843 0 0
+/
+66.249.64.107
+0 1 1 788 0 0 0 0
+-
+66.249.64.105
+0 6 6 4727 3 1551414275 0 0
+/
+40.77.167.157
+0 2 2 1576 1 1551872325 0 0
+/
+52.210.150.62
+0 1 1 751 1 1551768163 0 0
+/
+54.36.149.41
+0 1 1 732 1 1551703150 0 0
+/contact.html
+54.36.148.187
+0 1 1 732 1 1551727686 0 0
+/mentions-legales.html
+54.36.148.31
+0 1 1 732 1 1551894071 0 0
+/
+66.249.66.44
+0 1 1 788 0 0 0 0
+-
+54.36.150.158
+0 2 2 1464 0 0 0 0
+-
+40.77.167.135
+0 2 2 1576 2 1551614947 0 0
+/gagnants.html
+52.32.149.191
+0 1 1 732 1 1551421982 0 0
+/
+# End Of Table - sites (monthly)
+# -sites- (daily)
+142.93.184.122
+0 1 1 788 1 1551877283 0 0
+/
+54.36.148.115
+0 1 1 732 0 0 0 0
+-
+207.46.13.33
+0 1 1 788 1 1551906742 0 0
+/
+5.254.40.3
+0 1 1 936 1 1551895576 0 0
+/wp-login.php
+91.68.163.222
+0 1 1 788 0 0 0 0
+-
+207.46.13.5
+0 1 1 788 1 1551873028 0 0
+/gagnants.html
+40.77.167.145
+0 2 2 1576 2 1551901577 0 0
+/mentions-legales.html
+180.167.221.138
+0 1 1 751 1 1551913269 0 0
+/
+66.249.93.217
+0 1 1 788 1 1551916032 0 0
+/
+144.76.4.41
+0 2 2 1890 1 1551845714 0 0
+/
+92.136.196.40
+0 2 2 1575 1 1551888396 0 0
+/
+66.249.65.93
+0 2 2 1575 1 1551837036 0 0
+/
+66.249.93.218
+0 1 1 788 0 0 0 0
+-
+157.55.39.54
+0 4 4 3152 3 1551853843 0 0
+/
+40.77.167.157
+0 2 2 1576 1 1551872325 0 0
+/
+54.36.148.31
+0 1 1 732 1 1551894071 0 0
+/
+# End Of Table - sites (daily)
+# -referrers- 
+http://quizzdeal.fr/
+1 2
+http://pizza-imperia.com/
+0 1
+http://www.regie-business.com/_admin__/banniere.php
+0 4
+https://www.google.be/
+0 1
+http://pizza-tycoon.com/
+0 2
+http://www.quizzdeal.fr/index.html
+1 1
+http://www.quizzdeal.fr/
+1 1
+https://www.google.com/
+0 1
+- (Direct Request)
+0 235
+http://burger-imperia.com/
+0 4
+quizzdeal.fr
+1 2
+http://www.quizzdeal.fr/boutique.html
+1 8
+http://quizzdeal.fr
+1 2
+http://www.quizzdeal.fr//
+1 1
+http://www.google.com.hk
+0 1
+http://www.quizzdeal.fr/connexion.html
+1 1
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+0 4
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+0 1
+Mozilla/5.0 (compatible; Nimbostratus-Bot/v1.3.2; http://cloudsystemnetworks.com)
+0 1
+Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:50.0) Gecko/20100101 Firefox/50.0
+0 28
+Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+0 1
+Mozilla/5.0 (Windows NT 10.0; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0
+0 3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7
+0 1
+Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0
+0 3
+Mozilla/5.0 (Linux; Android 7.0; S70) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.105 Mobile Safari/537.36
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+0 40
+Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/)
+0 15
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 25
+Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+0 39
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+0 2
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36
+0 3
+Go-http-client/1.1
+0 4
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36
+0 8
+Mozilla/5.0 (compatible; Google Desktop/5.9.1005.12335; http://desktop.google.com/)
+0 1
+Googlebot-Image/1.0
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:65.0) Gecko/20100101 Firefox/65.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+0 2
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
+0 1
+Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)
+0 9
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile S
+0 24
+Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+0 8
+Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Sa
+0 2
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon
+0 5
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36
+0 3
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+0 7
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+0 2
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+0 9
+curl/7.64.0
+0 1
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:42.0) Gecko/20100101 Firefox/42.0
+0 1
+Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+0 6
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
