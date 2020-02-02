@@ -7,7 +7,7 @@
 		if (!empty($_POST["email"]) && !empty($_POST["message"])) {
 			if (preg_match("!^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-zA-Z]{2,4}$!", $post_email)) {
 
-                            $pdo->exec("INSERT INTO `livredor` (`id`, `email`, `message`, `date`, `statut`) VALUES ('', '".$post_email."', '".$post_message."', NOW(), 0)");
+                            $pdo->exec("INSERT INTO `livredor` (`id`, `email`, `message`, `date`, `statut`) VALUES (NULL, '".$post_email."', '".$post_message."', NOW(), 0)");
                             
                             $reponsConfirm = 'Votre message nous a bien été envoyé. Il sera soumis à validation avant d\'être publié.';
                             $button = '"Fermer"';
