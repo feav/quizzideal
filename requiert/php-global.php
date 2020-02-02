@@ -138,7 +138,7 @@ foreach ($all_InfosConcours as $dones_InfosConcours) {
 }
 
 // Tirage au sort Tombola
-$sqlTirageTombola = $pdo->query("SELECT  id, name, dateFin, count(id) as 'countId' FROM tombolas WHERE dateFin <= '" . date('Y-m-d') . "' && idUser = 0");
+$sqlTirageTombola = $pdo->query("SELECT  id, name, dateFin, COUNT(id) as 'countId' FROM tombolas WHERE dateFin <= '" . date('Y-m-d') . "' && idUser = 0  GROUP BY id, name, dateFin");
 $resultatTirageTombola = $sqlTirageTombola->fetch(PDO::FETCH_ASSOC);
 $countIdTombola = addslashes(htmlentities($resultatTirageTombola['countId']));
 $idTombola = addslashes(htmlentities($resultatTirageTombola['id']));
