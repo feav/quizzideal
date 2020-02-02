@@ -1,0 +1,22 @@
+.title-page{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+a.navigation-table{
+    width: 36px;
+    font-size: 24px;
+    background: #f91942;
+    color: #fff;
+    height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.table.group-nav{
+    margin: 6px;
+    text-align: right;
+    padding-right: 6px;
+}

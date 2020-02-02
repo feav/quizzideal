@@ -1,11 +1,8 @@
 ﻿<?php
-	include('./requiert/php-global.php');
+	include('./requiert/new-form/header.php');
 	
 	$meta_title = 'Quizzdeal.fr : Concours Missions';
 	$meta_description = '';
-	
-	include('./requiert/inc-head.php');
-	include('./requiert/inc-header-navigation.php');
 	
 		$sqlConcours = $pdo->query("SELECT * FROM concours WHERE id = 1");
 		$resultatConcours = $sqlConcours->fetch(PDO::FETCH_ASSOC);
@@ -18,36 +15,20 @@
 		$gagnant4 = addslashes(htmlentities($resultatConcours['gagnant4']));
 		$gagnant5 = addslashes(htmlentities($resultatConcours['gagnant5']));
 ?>
-    <!-- SECTION HEADLINE -->
-    <div class="section-headline-wrap v2">
-        <div class="section-headline">
-            <h2>Les concours missions</h2>
-            <p>Accueil<span class="separator">/</span><span class="current-section">Concours-missions</span></p>
-        </div>
-    </div>
-    <!-- SECTION HEADLINE -->
-
-    <div class="container">
-        <div >
-            <p style="padding: 50px; text-align: center"><?= $descriptionConcours; ?></p>
-        </div>
-        <!-- TRANSACTION LIST -->
-        <div class="transaction-list">
+<style type="text/css">
+    .pending-booking{
+        border: 1px solid rgb(234, 231, 231);
+        border-radius: 33px;
+    }
+</style>
 
 
-            <!-- TRANSACTION LIST HEADER -->
-            <div class="transaction-list-header">
-                <div class="transaction-list-header-date">
-                    <p class="text-header small">Utilisateur</p>
-                </div>
-                <div class="transaction-list-header-item">
-                    <p class="text-header small">Montant</p>
-                </div>
-                <div class="transaction-list-header-item">
-                    <p class="text-header small">Gain</p>
-                </div>
-            </div>
-            <!-- /TRANSACTION LIST HEADER -->
+<div class="container" style="margin-top: 25px;">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title-page">Les concours missions</h1>
+            <p class="description-concours"><?= $descriptionConcours; ?></p>
+
             <?php //Bloc req SQL pour la prochaine boucle
             $messagesParPage = 50;
             $retour_total = $pdo->query("SELECT COUNT(*) AS total FROM histo_offers WHERE dateUsTime >= '".$dateDebutConcours."' AND dateUsTime <= '".$dateFinConcours."' AND offerwall != 'Mission' AND etat LIKE 'Valid%%' GROUP BY idUser");
@@ -81,33 +62,49 @@
                 else 	{ $gainPosition = '-'; }
                 ?>
                 <!-- TRANSACTION LIST ITEM -->
-                <div class="transaction-list-item">
-                    <div class="transaction-list-item-date">
-                        <p><?= $winPrenom; ?> <?= substr($winNom , 0, 2); ?>.</p>
-                    </div>
-                    <div class="transaction-list-item-author">
-                        <p class="text-header"><?= displayMontant($amountTotal, 2, ''); ?> €</p>
-                    </div>
-                    <div class="transaction-list-item-item">
-                        <p class="category primary"><?= $gainPosition; ?></p>
+                <div class="col-sm-6 pending-booking">
+                    <div class="list-box-listing bookings">
+                        <div class="list-box-listing-img"><img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=120" alt=""></div>
+                        <div class="list-box-listing-content">
+                            <div class="inner">
+                                <h3><?= $winPrenom; ?> <?= substr($winNom , 0, 2); ?>.</h3>
+
+                                <div class="inner-booking-list">
+                                    <h5>Montant:</h5>
+                                    <ul class="booking-list">
+                                        <li class="highlighted"><?= displayMontant($amountTotal, 2, ''); ?> €</li>
+                                    </ul>
+                                </div>
+                                            
+                                <div class="inner-booking-list">
+                                    <h5>Gain:</h5>
+                                    <ul class="booking-list">
+                                        <li class="highlighted 
+                                        <?php 
+                                         if($gainPosition != '0,00 €' && $gainPosition != '-') 
+                                         echo 'gain';
+                                         ?>"><?= $gainPosition; ?></li>
+                                    </ul>
+                                </div>      
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- /TRANSACTION LIST ITEM -->
 
                 <?php  $i++;   endforeach; //Fin boucle débit?>
 
-            <!-- PAGINATION-->
-            <?php if ($pageActuelle != 1) { $page_p = ($pageActuelle - 1); ?><a href="<?= url_site; ?>/concoursMissions.html?page=<?php echo $page_p; ?>"><div class="bg-grey bg-grey-hover b-r-5 display-inline-block p-5-10">Page précédente</div></a><?php } else { ?><div class="bg-white b-r-5 display-inline-block p-5-10 color-grey cursor-not-allowed">Page précédente</div><?php } ?>
-            <?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) { $page_s = ($pageActuelle + 1); ?><a href="<?= url_site; ?>/concoursMissions.html?page=<?php echo $page_s; ?>"><div class="bg-grey bg-grey-hover b-r-5 p-5-10" style="float : right;">Page suivante</div></a><?php } else { ?><div class="bg-white b-r-5 p-5-10 color-grey cursor-not-allowed" style="float : right;">Page suivante</div><?php } ?><div class="clear"></div>
-            <!-- /PAGINATION -->
-
-
+            <div class="table group-nav">
+                    <!-- PAGINATION-->
+                <?php if ($pageActuelle != 1) { $page_p = ($pageActuelle - 1); ?><a class="navigation-table" href="<?= url_site; ?>/concoursMissions.html?page=<?php echo $page_p; ?>"><i class="fa fa-angle-left"></i></a><?php } else { ?><i class="fa fa-angle-left"></i><?php } ?>
+                <?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) { $page_s = ($pageActuelle + 1); ?><a class="navigation-table" href="<?= url_site; ?>/concoursMissions.html?page=<?php echo $page_s; ?>"><i class="fa fa-angle-right"></i></a><?php } else { ?><i class="fa fa-angle-right"></i><?php } ?>
+                <!-- /PAGINATION-->
+            </div>
         </div>
         <!-- /TRANSACTION LIST -->
     </div>
-
+</div>
 
 		
 <?php
-	include('./requiert/inc-footer.php');
+	include('./requiert/new-form/footer.php');
 ?>

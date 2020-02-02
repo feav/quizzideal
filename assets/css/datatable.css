@@ -1,0 +1,13 @@
+body { 
+  font-size: 140%; 
+  margin-top: 80px;
+}
+
+table caption {
+	padding: .5em 0;
+}
+
+table.dataTable th,
+table.dataTable td {
+  white-space: nowrap;
+}

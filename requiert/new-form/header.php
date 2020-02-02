@@ -13,6 +13,7 @@
 <!-- CSS
 ================================================== -->
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/theme-custom.css">
 <link rel="stylesheet" href="assets/css/colors/main.css" id="colors">
 
 </head>

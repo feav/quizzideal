@@ -1,41 +1,109 @@
-<?php
-include('./requiert/php-global.php');
 
-$meta_title = 'Quizzdeal.fr : Contactez-nous';
-$meta_description = '';
+<?php 
+    include('./requiert/new-form/header.php');
 
-include('./requiert/inc-head.php');
-include('./requiert/inc-header-navigation.php');
-include('./requiert/php-form/contact.php');
+    $meta_title = 'Quizzdeal.fr : Contactez-nous';
+    $meta_description = '';
+
+    include('./requiert/php-form/contact.php');
 ?>
 
-<div id="content" class="site-content">
-<div id="primary" class="content-area width-full">
-        <main id="main" class="site-main">
-            <div class="cont">			
-        <h1 class="maincont-ttl">Besoin d'information</span> rapidement ?</h1>
-        <h3 class="f-s-24 xs-f-s-18 Oswald f-w-light uppercase color-dark-grey txt-align-center">Vous n'avez pas trouvé de réponse(s) à votre(vos) question(s) ? Utilisez le formulaire de contact dès à présent pour nous contacter.</h3>
+<!-- Content
+================================================== -->
 
-        <div class="container m-t-40">
-            <div class="row" align="center">
-                <div class="col-md-6 col-xs-12 txt-align-center" style="float: inherit;">
-                    <div class="bg-light-grey p-20 b-r-10 b-5-blue">
-                        <form method='POST' class="bg-white p-5 contact-form" id="contact_form" method="post" action="">
-                            <div class="m-b-10 f-s-18 f-w-bold txt-align-left">Contactez-nous</div>
-                            <div id="reponse" align="center"><h3><?php echo $reponse; ?></h3></div>
-                            <input type="email" name='email' id="contact_email" class="input-md m-b-10" placeholder="Votre email" value="<?= $post_email; ?>" required>
-                            <input type="text" name='sujet' id="contact_sujet" class="input-md m-b-10" placeholder="Votre sujet" value="<?= $post_sujet; ?>" required>
-                            <textarea name="message" id="contact_description" cols="30" rows="7" class="input-md m-b-10" placeholder="Message" required><?= $post_email; ?></textarea>
-                            <button type="submit" name="submit_send" id="submitContact" value="submit_send" class="button-blue-degrade color-white b-r-5 f-s-13 submit-md">Envoyer le message</button>
-                        </form>
-                    </div>
-                </div>
+<!-- Map Container -->
+<div class="contact-map margin-bottom-60">
+
+    <!-- Google Maps -->
+    <div id="singleListingMap-container">
+        <div id="singleListingMap" data-latitude="40.70437865245596" data-longitude="-73.98674011230469" data-map-icon="im im-icon-Map2"></div>
+        <a href="#" id="streetView">Street View</a>
+    </div>
+    <!-- Google Maps / End -->
+
+    <!-- Office -->
+    <div class="address-box-container">
+        <div class="address-container" data-background-image="images/our-office.jpg">
+            <div class="office-address">
+                <h3>Our Office</h3>
+                <ul>
+                    <li>John Street 304</li>
+                    <li>New York</li>
+                    <li>Phone (123) 123-456 </li>
+                </ul>
             </div>
         </div>
     </div>
-</main>
+    <!-- Office / End -->
+
 </div>
+<div class="clearfix"></div>
+<!-- Map Container / End -->
+
+
+<!-- Container / Start -->
+<div class="container">
+
+    <div class="row">
+
+        <!-- Contact Details -->
+        <div class="col-md-4">
+
+            <h4 class="headline margin-bottom-30">Find Us There</h4>
+
+            <!-- Contact Details -->
+            <div class="sidebar-textbox">
+                <p>Collaboratively administrate channels whereas virtual. Objectively seize scalable metrics whereas proactive e-services.</p>
+
+                <ul class="contact-details">
+                    <li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>(123) 123-456 </span></li>
+                    <li><i class="im im-icon-Fax"></i> <strong>Fax:</strong> <span>(123) 123-456 </span></li>
+                    <li><i class="im im-icon-Globe"></i> <strong>Web:</strong> <span><a href="#">www.example.com</a></span></li>
+                    <li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#">office@example.com</a></span></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-8">
+
+            <section id="contact">
+                <h4 class="headline margin-bottom-35">Contactez-nous</h4>
+                <h5><?php echo $reponse; ?></h5>
+                <div id="contact-message"></div> 
+
+                    <form method='POST' class="bg-white p-5 contact-form" id="contact_form" method="post" action="" autocomplete="on">
+
+                    <div>
+                        <input type="email" name='email' id="contact_email" placeholder="Votre email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" value="<?= $post_email; ?>" required="required" />
+                    </div>
+
+                    <div>
+                        <input type="text" name='sujet' id="contact_sujet" placeholder="Votre sujet" value="<?= $post_sujet; ?>" required="required" />
+                    </div>
+
+                    <div>
+                        <textarea name="message" id="contact_description" cols="40" rows="3" placeholder="Message" spellcheck="true" required="required"><?= $post_email; ?></textarea>
+                    </div>
+
+                    <input type="submit" class="submit button" name="submit_send" id="submitContact" value="Envoyer le message" />
+
+                    </form>
+            </section>
+        </div>
+        <!-- Contact Form / End -->
+
+    </div>
+
 </div>
-<?php
-include('./requiert/inc-footer.php');
+<!-- Container / End -->
+
+<?php 
+    include('./requiert/new-form/footer.php');
 ?>
+<!-- Maps -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+<script type="text/javascript" src="assets/scripts/infobox.min.js"></script>
+<script type="text/javascript" src="assets/scripts/markerclusterer.js"></script>
+<script type="text/javascript" src="assets/scripts/maps.js"></script>
