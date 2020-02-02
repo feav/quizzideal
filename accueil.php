@@ -9,7 +9,7 @@ if (!isset($_SESSION['id'])) {
 	exit();
 }
 
-include('./requiert/inc-head.php');
+include('./requiert/new-inc-head.php');
 include('./requiert/inc-header-navigation.php');
 ?>
 

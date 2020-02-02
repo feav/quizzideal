@@ -26,8 +26,8 @@
 				$pdo->exec('UPDATE connectes SET timestamp=' . time() . ', idUser=\''.$mbreHashId.'\' WHERE ip=\'' . $_SERVER['REMOTE_ADDR'] . '\'');
 			}
 		}
-
-			$top_connectes = $pdo->query("SELECT COUNT(*), idUser FROM connectes WHERE idUser != '' GROUP BY idUser ORDER BY timestamp");
+			//@ars updat timestam order by with timestamp
+			$top_connectes = $pdo->query("SELECT COUNT(*), idUser FROM connectes as C WHERE idUser != '' GROUP BY idUser ORDER BY idUser ");
 			$i = 0;
 			$all_top_connectes = $top_connectes->fetchAll(PDO::FETCH_ASSOC);
 			$j = 0;
