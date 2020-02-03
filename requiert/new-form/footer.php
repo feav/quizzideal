@@ -1,5 +1,9 @@
 </div></div>
 
+<?php if (isset($_SESSION['id'])){
+	?>
+
+
 <button id="open-chatroom"  onclick="$('#chatroom').toggle()"><i class="im im-icon-Speach-Bubble12"></i></button>
 <div id="chatroom">
 	<div class="chatroom-head">
@@ -110,7 +114,12 @@
 		}
 ?>
 
-<h1 class="	title-page">Chatroom</h1>
+
+
+<?php } ?>
+
+
+
 <div class="container">
 	<div class="row">
 				
