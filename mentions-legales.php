@@ -55,14 +55,13 @@ p {
 <div class="container" style="margin-top: 25px;">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="title-page">Les derniers gagnants</h1>
+            <h1 class="title-page">Mentions légales</h1>
 
 			<section class="bg-light-grey absolute-section-1 margin-base">
 					<div class="m-auto content p-40-20 container">
 						<div class="row">
 						<div class="col-md-8 col-md-offset-2 col-xs-12 f-s-14 f-w-light">
-							<div class="f-s-21 uppercase f-w-400 m-b-5 color-orange"><?= $namePage; ?></div>
-							<?= $descriptionPage; ?>
+							<br><br>
 							<section>
 							Pour accéder au service Multi-cadeaux, vous devez accepter intégralement et sans réserve les présentes conditions générales d’utilisation.
 		Les Utilisateurs s’engagent à utiliser les services de « Quizzdeal », de façon loyale et honnête, conformément à leur destination, pour leurs seuls besoins

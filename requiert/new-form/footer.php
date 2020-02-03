@@ -17,11 +17,11 @@
 				<?php if (isset($_SESSION['id'])) { ?> 
                     <li> <a href="accueil.php" title="">Accueil</a></li>
                 <?php } else { ?>
-                    <li><a href="index.html" title="">Accueil</a></li>
+                    <li><a href="index.php" title="">Accueil</a></li>
                 <?php } ?>
-					<li><a href="contact.html" title="">Contact</a></li>
+					<li><a href="contact.php" title="">Contact</a></li>
 					<li><a href="gagnants.php" title="">Ils ont gagné</a></li>
-					<li><a href="mentions-legales.html" title="">Mentions légales</a></li>
+					<li><a href="mentions-legales.php" title="">Mentions légales</a></li>
                     <li><a href="faq.php" title="">Question fréquentes</a></li>
 				</ul>
 
