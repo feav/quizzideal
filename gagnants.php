@@ -29,7 +29,7 @@
     }
 </style>
 <div class="" style="margin-top: 25px;">
-    <div class="row">
+    <div class="container">
         <div class="col-md-12">
             <h1 class="title-page">Les derniers gagnants</h1>
             <table class="basic-table" rules="none" class="f-s-13 f-w-light">
