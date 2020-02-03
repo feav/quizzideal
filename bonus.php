@@ -5,7 +5,7 @@ $meta_title = 'Quizzdeal.fr : Bonus Quotidien';
 $meta_description = '';
 
 if (!isset($_SESSION['id'])) {
-    header('Location: /connexion.html');
+    header('Location: /connexion.php');
     exit();
 }
 

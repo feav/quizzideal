@@ -12,10 +12,11 @@ if (date_default_timezone_set('Europe/Stockholm') == 0) {
 
 // Define
 
-define("nom_site", "quizzdeal.fr", true);
-define("url_site", "https://quizzdeal.fr/", true);
-define("url_panel", "https://quizzdeal.fr/administration", true);
-define("ip", $_SERVER["REMOTE_ADDR"], true);
+// define("nom_site", "quizzdeal.fr");
+define("nom_site", "http://localhost:8888/quizz");
+define("url_site", nom_site."quizzdeal.fr/");
+define("url_panel", nom_site."/administration");
+define("ip", $_SERVER["REMOTE_ADDR"]);
 
 /*
 define("url_site", "http://localhost:8000", true);
@@ -153,4 +154,12 @@ if ($countIdTombola > 0 && $dateFinTombola . ' 16:00' <= date('Y-m-d H:i')) {
 
 	$pdo->exec("INSERT INTO `gagnants` (`id`, `idUser`, `montant`, `type`, `categorie`, `date`, `ip`) VALUES ('', '" . $idUserWinner . "', 0, '" . $nameCadeauTombola . "', 'Tombola', '" . date('d/m/Y à H:i:s') . "', '')");
 }
+if (isset($_GET['action']) && $_GET['action'] == 'logout') {
+        session_destroy();
+        unset($_SESSION['id']);
+        unset($_SESSION['email']);
+        unset($_SESSION['passe']);
+	header('Location: connexion.php');
+	exit;}
+
 ?>

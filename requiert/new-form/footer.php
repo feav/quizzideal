@@ -1,9 +1,22 @@
-
+</div></div>
 <!-- Footer
 ================================================== -->
 <div id="footer" class="sticky-footer">
 	<!-- Main -->
 	<div class="container">
+		<?php
+		if (isset($_SESSION['id'])) {
+			?>
+
+
+
+
+			<?php
+		}else{
+			?>
+
+
+
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
 				<img class="footer-logo" src="assets/images/logo.png" alt="">
@@ -36,9 +49,9 @@
 			<div class="col-md-3  col-sm-12">
 				<h4>Contact Us</h4>
 				<div class="text-widget">
-					<span>France, Paris</span> <br>
-					Phone: <span>(123) 123-456 </span><br>
-					E-Mail:<span> <a href="#">office@example.com</a> </span><br>
+					<span>France, 81000 albi</span> <br>
+					Phone: <span>(+33) 766001506 </span><br>
+					E-Mail:<span> <a href="#">jeromerodrigueze@outlook.com</a> </span><br>
 				</div>
 
 				<ul class="social-icons margin-top-20">
@@ -51,7 +64,11 @@
 			</div>
 
 		</div>
-		
+		<!-- Footer / End -->
+
+			<?php
+		}
+		?>
 		<!-- Copyright -->
 		<div class="row">
 			<div class="col-md-12">
@@ -62,7 +79,6 @@
 	</div>
 
 </div>
-<!-- Footer / End -->
 
 
 <!-- Back To Top Button -->

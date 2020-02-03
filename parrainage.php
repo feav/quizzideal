@@ -9,7 +9,7 @@
     ?>
 
 
-    <div class="container">
+    <div class="">
         <div class="row">
             <div>
                 <h2>Parainage</h2>
@@ -49,7 +49,7 @@
                 </div>
 
             <div class="row">
-                <h4 class="headline centered ">
+                <h4 class="headline centered margin-left-20 margin-right-20">
                         Vous souhaitez inviter vos ami(e)s sur Multi-cadeaux et gagner plus d'argent ? Récupérez votre lien de parrainage ci-dessous et partagez-le un maximum. Chaque personne qui s'inscrit via votre lien devient automatiquement votre filleul et vous devenez son parrain. A chaque commande effectuée, vous toucherez 15% du montant de leur commande.
                     </h4>
 
@@ -82,7 +82,7 @@
         font-weight: 600;
     }
 </style>
-<div class="container" style="margin-top: 25px;">
+<div class="" style="margin-top: 25px;">
     <div class="row">
         <div class="col-md-12">
             <h1 class="title-page">Liste de vos filleuls</h1>

@@ -1,5 +1,4 @@
 <?php 
-	include('./requiert/new-form/header.php');
 	include('./requiert/php-form/login-register.php');
 	
     $post_reg_mdp = addslashes(htmlentities("123"));
@@ -34,7 +33,7 @@
 
 
 <!-- Fullwidth Section -->
-<section class="fullwidth margin-top-65 padding-top-75 padding-bottom-70" data-background-color="#f8f8f8">
+<section class="fullwidth margin-top-0 padding-top-50 padding-bottom-70" data-background-color="#f8f8f8">
 
 	<div class="container">
 		<div class="row">

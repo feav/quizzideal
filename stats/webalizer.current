@@ -159,7 +159,7 @@
 0 1 0 787 0 0 0 0
 /site/wp-includes/wlwmanifest.xml
 0 4 0 3888 0 0 0 0
-/connexion.html
+/connexion.php
 0 4 0 3040 4 1 0 0
 /contact.html
 0 2 0 1649 2 0 0 0
@@ -327,7 +327,7 @@
 /
 54.36.148.8
 0 1 1 732 1 1551631310 0 0
-/connexion.html
+/connexion.php
 157.55.39.7
 0 2 2 1576 2 1551669115 0 0
 /
@@ -360,7 +360,7 @@
 -
 54.36.148.110
 0 1 1 732 1 1551610057 0 0
-/connexion.html
+/connexion.php
 45.235.40.5
 0 1 1 732 1 1551716433 0 0
 /
@@ -638,7 +638,7 @@ http://www.quizzdeal.fr//
 1 1
 http://www.google.com.hk
 0 1
-http://www.quizzdeal.fr/connexion.html
+http://www.quizzdeal.fr/connexion.php
 1 1
 # End Of Table - referrers
 # -agents- 

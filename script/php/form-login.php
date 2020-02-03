@@ -219,5 +219,5 @@ if (isset($_SESSION['email'])) {
 		
 	</body>
 
-<!-- Mirrored from www.gptbonus.com/connexion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jul 2019 10:26:57 GMT -->
+<!-- Mirrored from www.gptbonus.com/connexion.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jul 2019 10:26:57 GMT -->
 </html>
