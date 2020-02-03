@@ -168,7 +168,7 @@ if(!isset($_SESSION['id'])){
 
 <section class="container-content">
     <h1 class="title-page">Cashback</h1>
-    <div class="container wrapper-content">
+    <div class=" wrapper-content">
     <div class="m-auto content p-40-20">	
     <div class="row">
         <div class="col-sm-3 col-xs-12" style="padding:0">
