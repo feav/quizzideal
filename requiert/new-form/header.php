@@ -21,7 +21,7 @@ if (!isset($_SESSION['id'])) {
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/theme-custom.css">
 <link rel="stylesheet" href="assets/css/colors/main.css" id="colors">
-
+<script src="script/js/sweetalert.min.js"></script>
 </head>
 
 <body>
