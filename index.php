@@ -8,3 +8,6 @@ if (!isset($_SESSION['id']) || $_SESSION['id']==NULL || $_SESSION['id'] == "NULL
 }
 
 ?>
+<script type="text/javascript">
+	$('#navigation .home').addClass('current');
+</script>

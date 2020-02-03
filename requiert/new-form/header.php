@@ -70,16 +70,16 @@ if (!isset($_SESSION['id'])) {
 					<nav id="navigation" class="style-1">
 						<ul id="responsive">
 
-							<li><a class="current" href="index.php">Accueil</a>
+							<li><a class="home" href="index.php">Accueil</a>
 							</li>
 
-							<li><a href="gagnants.php"  >Gagnants</a>
+							<li><a class="gagnant" href="gagnants.php"  >Gagnants</a>
 							</li>
 
-							<li><a href="faq.php" >FAQ</a>
+							<li><a class="faq" href="faq.php" >FAQ</a>
 							</li>
 
-							<li><a href="contact.php" >Contact</a>
+							<li><a class="contact" href="contact.php" >Contact</a>
 							</li>
 							
 							
@@ -184,8 +184,23 @@ if (isset($_SESSION['id'])) {
 					<li><a href="./mes-commandes.php"><i class="fa fa-1x fa-list"></i>Commandes</a></li>
 					<li><a href="./mes-participations.php"><i class="fa fa-1x fa-list"></i>Participations</a></li>
 					<li><a href="./coupons.php">  <i class="fa fa-1x fa-money"></i>Coupons</a></li>
-					<li><a href="./cashback.php"><i class="fas fa-1x fa-money"></i>CashBack</a></li>
-					<li><a href="./offerwalls.php?ow=adgem" > <i class="fas fa-1x fa-money"></i>OfferWalls</a></li>
+					<li><a href="./cashback.php"><i class="fa fa-1x fa-money"></i>CashBack</a></li>
+
+					<li class="li-offerwall <?php if(1) echo "active" ?> ">
+						<a><i class="fa fa-1x fa-money"></i>Offerwalls</a>
+						<ul>
+							<li><a href="./offerwalls.php?ow=adgem">adgem</a></li>
+							<li><a href="./offerwalls.php?ow=adworkmedia">adworkmedia</a></li>
+							<li><a href="./offerwalls.php?ow=adworkmedia">adworkmedia</a></li>
+							<li><a href="./offerwalls.php?ow=ayetstudios">ayetstudios</a></li>
+							<li><a href="./offerwalls.php?ow=kiwiwall">kiwiwall</a></li>
+							<li><a href="./offerwalls.php?ow=offertoro">offertoro</a></li>
+							<li><a href="./offerwalls.php?ow=offerwolf">offerwolf</a></li>
+							<li><a href="./offerwalls.php?ow=superrewards">superrewards</a></li>
+							<li><a href="./offerwalls.php?ow=wannads">wannads</a></li>
+						</ul>	
+					</li>
+
 				</ul>	
  
 				<ul data-submenu-title="Account">

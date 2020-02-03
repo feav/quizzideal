@@ -223,4 +223,5 @@ $descriptionPage = nl2br(htmlentities($resultatPage['contenu']));
         $('.toggle-wrap:first').find('.trigger').addClass('active');
         $('.toggle-wrap:first').find('.toggle-container').css('display', 'block');
     });
+    $('#navigation .faq').addClass('current');
 </script>

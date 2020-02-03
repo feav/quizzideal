@@ -32,6 +32,9 @@ $mbre_pseudo = $mbrePrenom . " " . $mbreNom;
         padding: 0;
         padding: 8px 0;
     }
+    .title-page{
+        margin: 45px 0 28px;
+    }
 </style>
 
     
@@ -68,17 +71,7 @@ $mbre_pseudo = $mbrePrenom . " " . $mbreNom;
                 $Cdones_offer = $Cwall->fetch(PDO::FETCH_ASSOC);
 
                 $i = 0;
-                if ($Cdones_offer['nbr_entrees'] == 0) {
-                    ?>
-
-                    <tr>
-                        <td height="30" colspan="3" align="middle">
-                            Vous n'avez aucun message actuellement...
-                        </td>
-                    </tr>
-
-                    <?php
-                } else {
+                if(($Cdones_offer['nbr_entrees'] != 0)) {
                     $wall = $pdo->query("SELECT id2, titre, user, user2, date, lu FROM messagerie WHERE titre != '' AND (user = '" . $mbre_pseudo . "' OR user2 = '" . $mbre_pseudo . "') AND user != '' ORDER BY id DESC");
                     $i = 0;
                     $all_wall = $wall->fetchAll(PDO::FETCH_ASSOC);

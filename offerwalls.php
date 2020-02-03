@@ -50,28 +50,7 @@ if (!isset($_SESSION['id'])) { header('Location: /connexion.php'); exit(); }
 	    <div class=" wrapper-content">
 		    <div class="m-auto content p-40-20">
 		    	<p>Gagnez de l'argent en participant à nos différentes missions ! L'argent sera crédité sur votre compte immédiatement après votre participation.</p>	
-			    <div class="row">
-			        <div class="col-sm-3 col-xs-12" style="padding:0">
-			            <div class="" style="box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);">
-			                <div class="cat-head">Offerwalls</div>
-			                <div class="cat-box-content">
-			                    <ul class="offerwall" style="padding: 0;">
-									<li><form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'adgem') echo 'active';?>" style="width: 100%;">Adgem</button><input type="hidden" name="ow" value="adgem"></form></li>
-									<li><form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'adworkmedia') echo 'active';?>" style="width: 100%;">AdWorkMedia</button><input type="hidden" name="ow" value="adworkmedia"></form>
-									</li>
-									<li>
-										<form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'ayetstudios') echo 'active';?>" style="width: 100%;">Ayetstudios</button><input type="hidden" name="ow" value="ayetstudios"></form></li>
-									<li><form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'kiwiwall') echo 'active';?>" style="width: 100%;">Kiwiwall</button><input type="hidden" name="ow" value="kiwiwall"></form></li>
-									<li><form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'offertoro') echo 'active';?>" style="width: 100%;">Offertoro</button><input type="hidden" name="ow" value="offertoro"></form></li>
-									<li><form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'offerwolf') echo 'active';?>" style="width: 100%;">Offerwolf</button><input type="hidden" name="ow" value="offerwolf"></form></li>
-									<li><form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'personaly') echo 'active';?>" style="width: 100%;">Personaly</button><input type="hidden" name="ow" value="personaly"></form></li>
-									<li><form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'superrewards') echo 'active';?>" style="width: 100%;">Superrewards</button><input type="hidden" name="ow" value="superrewards"></form></li>
-									<li><form method="get"><button type="submit" class="button btn-offerwalls <?php if($_GET['ow'] == 'wannads') echo 'active';?>" style="width: 100%;">Wannads</button><input type="hidden" name="ow" value="wannads"></form></li>
-								</ul>
-			                </div>                
-			            </div>
-			        </div>
-					<div class="col-md-8 col-xs-12">
+					<div>
 						<div class="bg-light-grey b-r-10 p-20 b-special-grey">
 
 							<?php if (isset($_GET['ow'])) : ?> 
@@ -136,9 +115,15 @@ if (!isset($_SESSION['id'])) { header('Location: /connexion.php'); exit(); }
 
 						<?php endif; ?>
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>
 
 <?php include('./requiert/new-form/footer.php'); ?>
+<script type="text/javascript">
+	$( window ).on( "load", function() {
+        $('.dashboard-nav ul li').removeClass('active');
+		$('.dashboard-nav ul li.li-offerwall').addClass('active');
+		$('.dashboard-nav-inner').scrollTop(500);
+    });
+</script>

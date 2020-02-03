@@ -91,3 +91,6 @@
 <?php 
     include('./requiert/new-form/footer.php');
 ?>
+<script type="text/javascript">
+    $('#navigation .gagnant').addClass('current');
+</script>
