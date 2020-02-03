@@ -131,7 +131,7 @@ if (!empty($_POST["submit_login"])) {
 
                                 $reponsConfirm = 'Connexion en cours, veuillez patienter...';
                                 $button = 'false';
-                                if ($result_req->datelastco != date('Y-m-d')) {
+                                if ($result_req->datelastco != date('Y-m-d') && false) {
                                     $redirectionLogin = url_site . 'bonus.php';
                                 } else {
                                     $redirectionLogin = 'accueil.php';
