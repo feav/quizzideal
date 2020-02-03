@@ -75,7 +75,7 @@ if (!isset($_SESSION['id'])) {
 							</ul>
 						</li>
 
-						<li><a href="./livredor.php">Gagner de l'argent</a>
+						<li><a href="./infos.php">Gagner de l'argent</a>
 							<ul>
 								<li><a href="./parrainage.php"><i class="fa fa-1x fa-users"></i>Parrainage</a>
 								</li>
