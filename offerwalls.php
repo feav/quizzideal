@@ -47,7 +47,7 @@ if (!isset($_SESSION['id'])) { header('Location: /connexion.php'); exit(); }
 	<!-- SECTION HEADLINE -->
 	<section class="container-content">
 	    <h1 class="title-page">Cashback</h1>
-	    <div class="container wrapper-content">
+	    <div class=" wrapper-content">
 		    <div class="m-auto content p-40-20">
 		    	<p>Gagnez de l'argent en participant à nos différentes missions ! L'argent sera crédité sur votre compte immédiatement après votre participation.</p>	
 			    <div class="row">
