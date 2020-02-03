@@ -93,17 +93,17 @@
 				}
 ?>
 
-		<div style="font-size:12px;padding:5px;<?php if ($i%2==1) { ?>background-color:#efefef;<?php } ?>-moz-border-radius : 5px; -webkit-border-radius : 5px; border-radius : 5px;">
-			<span class="f-w-bold f-s-13" style="color:<?= $color; ?>;font-size: 15px"><?= $prenom; ?> <?= $nom; ?></span>
-            <span class="f-s-13">[<?= $when.substr($timer[1],0, strlen($timer[1]) - 3); ?>]</span>
-			<?php if ($mbreLevel > 1) { ?>
-            <a href="<?= url_site; ?>accueil.html?del=1&id=<?= $id; ?>&idUser=<?= $dones_chat['idUser']; ?>&time=<?= $dones_chat['time']; ?>" onclick="return confirm('Voulez-vous vraiment supprimer ce message ?');">
-                    <div style="float:right;background-color:#dc6666;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;padding:2px 5px;color:white;margin-left:5px;">Supprimer</div>
-                </a>
-            <?php } ?>
-            <div style="clear:both;margin-bottom:3px;"></div>
-			<span style="font-size: 15px"><?= nl2br($message); ?></span>
-        </div>
+	
+        <div class="message-bubble">
+			<div class="message-avatar"><img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&amp;s=70" alt="" /></div>
+			<div class="message-text">
+				<b><?= $prenom; ?> <?= $nom; ?></b> 
+				<small>
+					[<?= $when.substr($timer[1],0, strlen($timer[1]) - 3); ?>]
+				</small>
+				<p><?= nl2br($message); ?></p>
+			</div>
+		</div>
 <?php
 		$i++;
 		}
