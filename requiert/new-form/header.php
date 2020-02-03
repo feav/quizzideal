@@ -70,8 +70,8 @@ if (!isset($_SESSION['id'])) {
 								</li>
 								<li><a href="./coupons.php">  <i class="fa fa-1x fa-money"></i>Coupons</a>
 								</li>
-								<li><a href="listings-single-page.html"><i class="fas fa-1x fa-money"></i>CashBack</a></li>
-								<li><a href="listings-single-page-2.html"> <i class="fas fa-1x fa-money"></i>OfferWalls</a></li>
+								<li><a href="cashback.php"><i class="fa fa-1x fa-money"></i>CashBack</a></li>
+								<li><a href="OfferWalls.php?ow=adgem"> <i class="fa fa-1x fa-money"></i>OfferWalls</a></li>
 							</ul>
 						</li>
 

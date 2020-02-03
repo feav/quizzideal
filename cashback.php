@@ -1,6 +1,6 @@
 <?php
 
-include('./requiert/php-global.php');
+include('./requiert/new-form/header.php');
 
 $meta_title = 'Quizzdeal.fr : Les cashback';
 $meta_description = '';
@@ -9,10 +9,6 @@ if(!isset($_SESSION['id'])){
     header("Location: connexion.php");
     exit();
 }
-
-include('./requiert/inc-head.php');
-include('./requiert/inc-header-navigation.php');
-
 ?>
 <style>
 
@@ -45,7 +41,7 @@ include('./requiert/inc-header-navigation.php');
         width: 100%;
     }
     a.btn_code {
-        background: #6bc67c;
+        background: #f74265;
         transition: all 0.2s;
         border-radius: 30px;
         color: #fff;
@@ -67,7 +63,6 @@ include('./requiert/inc-header-navigation.php');
     	text-align: center;
     }
     a.btn_code:hover {
-    	background: #7dcd8c;
         color: #fff;	
     }
     form.coupon_form > span {
@@ -113,6 +108,34 @@ include('./requiert/inc-header-navigation.php');
     		height: 170px;
     	}
     }
+    ul{
+        list-style-type: none;
+    }
+    .wrapper-content{margin-top: 70px;}
+    .cat-box-content{
+        padding:20px;
+    }
+    .cat-head{
+        background: #f74265;
+        color: #fff;
+        padding: 7px 15px;
+        font-size: 16px;
+        border-radius: 6px 6px 0 0;
+    }
+    .item-coupon{
+        border: 1px solid #80808036;
+        border-radius: 25px;
+    }
+    .coupon-box-img{
+        height: 70%;
+        margin-bottom: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
 <script>
 	function DispMsg(ele,msg) {
@@ -143,34 +166,31 @@ include('./requiert/inc-header-navigation.php');
     }
 </script>
 
-<section class="bg-white absolute-section-1">
+<section class="container-content">
+    <h1 class="title-page">Cashback</h1>
+    <div class="container wrapper-content">
     <div class="m-auto content p-40-20">	
     <div class="row">
-        <div class="col-md-3 col-sm-12 col-xs-12">
-            <?php
-                $sql = "SELECT * FROM cashbackengine_categories";
-                $req = $pdo->query($sql);
-                $categories = $req->fetchAll(PDO::FETCH_ASSOC);
-            ?>
-            <div class="bg-light-grey b-r-10 p-20 b-special-grey m-t-20" style="border: 2px orange solid">
-                <div class="bg-white b-r-10 p-10-20 f-s-14 b-special-grey f-w-bold" style="margin:-15px 0 10px -15px;width:calc(100% - 10px);">
-                    Categories
-                </div>
-                    <ul class="widget-submenu">
+        <div class="col-sm-3 col-xs-12" style="padding:0">
+            <div class="" style="box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);">
+                <div class="cat-head">Catégorie</div>
+                <?php
+                    $sql = "SELECT * FROM cashbackengine_categories";
+                    $req = $pdo->query($sql);
+                    $categories = $req->fetchAll(PDO::FETCH_ASSOC);
+                ?>
+                <div class="cat-box-content">
+                    <ul class="widget-submenu" style="padding: 0">
                         <?php foreach ($categories as $category) : ?>
                             <li class=" m-b-5 m-t-5">
                                 <a href="cashback.php?category=<?= $category['category_id'];?>"><?= $category['name']; ?></a>
                             </li>
                         <?php endforeach; ?>
                     </ul>
-                <div class="clear"></div>
+                </div>                
             </div>
         </div>
-        <div class="col-md-9 col-sm-12 col-xs-12">
-            <div class="m-b-5 f-s-18 f-w-bold txt-align-left color-gold">cashback</div>
-        <div class="m-b-20 b-b-3-gold"></div>
-
-        <div class="bg-light-grey b-r-10 p-20 b-special-grey container">
+        <div class="col-sm-9 col-md-8 col-md-offset-1">
             <div class="row">      
 
     <?php
@@ -209,11 +229,9 @@ include('./requiert/inc-header-navigation.php');
         $boutique_image=  strpos($dones_debits['image'], 'http') !== false ? $dones_debits['image'] : '/img/' . $dones_debits['image'];
     ?>
                 <div class="col-md-4 col-sm-6 col-xs-12 m-b-20">
-                    <div class="coupon bg-white b-special-grey b-r-5 p-20 row">
-                        <div class="col-md-12 col-sm-12 col-xs-12 " style="height:70%;margin-bottom: 0;width: 100%;padding-left: 0;padding-right: 0; ">
-                            <!-- <div class="coupon-img"> -->
-                                <img src="<?= $boutique_image; ?>" alt="" class="" style="width: 100%;"/>
-                            <!-- </div> -->
+                    <div class="coupon item-coupon bg-white b-special-grey b-r-5 p-20 row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 coupon-box-img">
+                            <img src="<?= $boutique_image; ?>" alt="" class="" style="max-width: 80%;"/>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12" style="height:25%;margin-bottom: 0;">
 
@@ -229,24 +247,25 @@ include('./requiert/inc-header-navigation.php');
                     </div>
                 </div>
 
-<?php } ?>
-          
-            <div class="clear"></div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 m-b-20">
-<?php if ($pageActuelle != 1) {
-    $page_p = ($pageActuelle - 1); ?><a href="<?= url_site; ?>/cashback.php?page=<?php echo $page_p; ?>"><div>Page précédente</div></a><?php } else { ?><div>Page précédente</div><?php } ?>
-<?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) {
-    $page_s = ($pageActuelle + 1); ?><a href="<?= url_site; ?>/cashback.php?page=<?php echo $page_s; ?>"><div style="float : right;">Page suivante</div></a><?php } else { ?><div style="float : right;">Page suivante</div><?php } ?>
+    <?php } ?>
+              
+                <div class="clear"></div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 m-b-20 group-nav">
+    <?php if ($pageActuelle != 1) {
+        $page_p = ($pageActuelle - 1); ?><a class="navigation-table" href="<?= url_site; ?>/cashback.php?page=<?php echo $page_p; ?>"><i class="fa fa-angle-left"></i></a><?php } else { ?><i class="fa fa-angle-left"></i><?php } ?>
+    <?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) {
+    $page_s = ($pageActuelle + 1); ?><a class="navigation-table" href="<?= url_site; ?>/cashback.php?page=<?php echo $page_s; ?>"><i class="fa fa-angle-right"></i></a><?php } else { ?><i class="fa fa-angle-right"></i><?php } ?>
             </div>
             <div class="clear"></div>
             </div>
         </div>
     </div>
         </div>
-    </div>			
+    </div>		
+    </div>	
 </section>
 
 <?php
-include('./requiert/inc-footer.php');
+include('./requiert/new-form/footer.php');
 ?>
