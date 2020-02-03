@@ -163,24 +163,7 @@
 	</div>
 </div>
 <?php
-	} else {
-?>
-		<section class="bg-light-grey absolute-section-1 margin-base">
-			<div class="m-auto content p-40-20 container"><div class="row">
-		<script type="text/javascript">
-			swal({
-				text: "Oups, vous n'avez rien a faire ici !",
-				button: false,
-				icon: "error",
-				closeOnClickOutside: false,
-				closeOnEsc: false,
-			})
-			setTimeout("window.location='<?= url_site; ?>'",3000);
-		</script>
-</div></div>
-		
-<?php
-	}
+	} 
 ?>
 
 <!-- Footer
