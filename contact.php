@@ -11,11 +11,6 @@
 <!-- Content
 ================================================== -->
 
-
-<div class="clearfix"></div>
-<!-- Map Container / End -->
-
-
 <!-- Container / Start -->
 <div class="container" style="margin-top: 50px">
 

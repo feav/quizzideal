@@ -3,7 +3,7 @@
 //@ars - update to connect bd locally
 $serveur = 'localhost';
 $login = 'root';
-$passe = '';
+$passe = 'root';
 $base_de_donnee = 'quizz';
 
 /*

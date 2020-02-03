@@ -1,36 +1,109 @@
-<?php
-include('./requiert/php-global.php');
+<?php 
+    include('./requiert/new-form/header.php');
+    include('./requiert/php-form/login-register.php');
+    
+    $post_reg_mdp = addslashes(htmlentities("123"));
 
-$meta_title = 'Quizzdeal.fr : Mes commandes';
-$meta_description = '';
 
-if (!isset($_SESSION['id'])) {
-    header('Location: /connexion.html');
-    exit();
-}
+    $totalMissions = $pdo->query("SELECT COUNT(id) AS 'id' FROM offers WHERE actif = 1");
+    $totalMissions = $totalMissions->fetch(PDO::FETCH_ASSOC);
+    $totalMissions = $totalMissions['id'];
 
-include('./requiert/inc-head.php');
-include('./requiert/inc-header-navigation.php');
-?>
+    $totalMissionsAttente = $pdo->query("SELECT COUNT(id) AS 'id' FROM histo_offers WHERE idUser = $mbreId AND etat = 'En cours'");
+    $totalMissionsAttente = $totalMissionsAttente->fetch(PDO::FETCH_ASSOC);
+    $totalMissionsAttente = $totalMissionsAttente['id'];
 
-<section class="bg-white absolute-section-1">
-    <div class="m-auto content p-40-20">
-        <div class="container" style="padding-left: 0; margin-left: 0; width: 100%;">
+    $totalFilleuls = $pdo->query("SELECT COUNT(id) AS 'id' FROM users WHERE idParrain = $mbreId AND actif = 1");
+    $totalFilleuls = $totalFilleuls->fetch(PDO::FETCH_ASSOC);
+    $totalFilleuls = $totalFilleuls['id'];
+
+    $totalCommandes = $pdo->query("SELECT COUNT(id) AS 'id' FROM gagnants WHERE idUser = $mbreId AND etat != 'Annulé'");
+    $totalCommandes = $totalCommandes->fetch(PDO::FETCH_ASSOC);
+    $totalCommandes = $totalCommandes['id'];
+    ?>
+
+
+    <div class="container">
+        <div class="row">
+            <div>
+                <h2>Bonjour <?= $mbrePrenom; ?></h2>
+            </div>
             <div class="row">
-                <?php include('./requiert/inc-menu-right.php'); ?>
-                <div class="col-md-8 col-xs-12 xs-m-b-20">
-                    <div class="bg-light-grey b-r-10 p-20 b-special-grey">
-                        <div class="bg-white b-r-10 p-10-20 f-s-14 b-special-grey f-w-bold" style="margin:-15px 0 20px -15px;width:calc(100% - 10px);"><i class="fa fa-fw fa-list m-r-10"></i> Historique de mes commandes</div>
 
+                    <!-- Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dashboard-stat color-1">
+                            <div class="dashboard-stat-content"><h4><?= displayMontant($totalMissions, 0, ''); ?></h4> <span>Missions Disponibles</span></div>
+                            <div class="dashboard-stat-icon"><i class="im im-icon-Management"></i></div>
+                        </div>
+                    </div>
 
-                        <table rules="none" class="f-s-13 f-w-light">
+                    <!-- Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dashboard-stat color-2">
+                            <div class="dashboard-stat-content"><h4><?= displayMontant($totalMissionsAttente, 0, ''); ?></h4> <span>Mission En Attente</span></div>
+                            <div class="dashboard-stat-icon"><i class="im im-icon-Over-Time2"></i></div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dashboard-stat color-3">
+                            <div class="dashboard-stat-content"><h4><?= displayMontant($totalFilleuls, 0, ''); ?></h4> <span>Filleuls</span></div>
+                            <div class="dashboard-stat-icon"><i class="im im-icon-Add-UserStar"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dashboard-stat color-4">
+                            <div class="dashboard-stat-content"><h4><?= displayMontant($totalCommandes, 0, ''); ?></h4> <span>Commandes</span></div>
+                            <div class="dashboard-stat-icon"><i class="im im-icon-Credit-Card2"></i></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<style type="text/css">
+    a.navigation-table{
+        width: 36px;
+        font-size: 24px;
+        background: #f91942;
+        color: #fff;
+        height: 36px;
+        display: inline-block;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .table.group-nav{
+        margin: 6px;
+        text-align: right;
+        padding-right: 6px;
+    }
+    .title-page{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+    }
+</style>
+<div class="container" style="margin-top: 25px;">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title-page">Historique de mes Commandes</h1>
+            <table class="basic-table" rules="none" class="f-s-13 f-w-light">
+
                             <tr>
-                                <th align="left" valign="middle">Date</th>
-                                <th align="left" valign="middle">Libellé</th>
-                                <th align="right" valign="middle">Montant</th>
-                                <th align="right" valign="middle">Etat</th>
+                                <th align="middle" valign="middle">Date</th>
+                                <th align="middle" valign="middle">Libellé</th>
+                                <th align="middle" valign="middle">Montant</th>
+                                <th align="middle" valign="middle">Etat</th>
                             </tr>
 
+                
                             <?php
                             $messagesParPage = 50;
                             $retour_total = $pdo->query("SELECT COUNT(*) AS total FROM gagnants WHERE idUser = '" . $mbreId . "'");
@@ -61,29 +134,27 @@ include('./requiert/inc-header-navigation.php');
                                 ?>
 
                                 <tr>
-                                    <th align="left" valign="middle">Le <?= $dones_commandes['date']; ?></th>
-                                    <th align="left" valign="middle"><?= $dones_commandes['type']; ?><?php if ($dones_commandes['code'] != '') echo ' | <strong>' . $dones_commandes['code'] . '</strong>'; ?></th>
-                                    <th align="right" valign="middle"><?= displayMontant($dones_commandes['montant'], 2, ''); ?> €</th>
-                                    <th align="right" valign="middle"><?= $btn_etat; ?></th>
+                                    <td align="left" valign="top"><?= $dones_histoParticipations['idt']; ?></td>
+                                    <td><?php echo $btn_etat;?></td>
+                                    <td align="left" valign="top"><?php echo $dones_commandes['type']; ?><?php if ($dones_commandes['code'] != '') echo ' | <strong>' . $dones_commandes['code'] . '</strong>'; ?></td>
+                                    <td align="left" valign="top"><?= displayMontant($dones_commandes['montant'], 2, ''); ?> €</td>
+                                    <td align="left" valign="top">Le <?php echo $dones_commandes['date']; ?></td>
                                 </tr>
-    <?php
-}
-?>
-                        </table>
-                    </div>
-                </div>
 
-                
-                
-            </div></div>
-<?php if ($pageActuelle != 1) {
-    $page_p = ($pageActuelle - 1); ?><a href="<?= url_site; ?>/mes-commandes.html?page=<?php echo $page_p; ?>"><div class="bg-grey bg-grey-hover b-r-5 display-inline-block p-5-10">Page précédente</div></a><?php } else { ?><div class="bg-white b-r-5 display-inline-block p-5-10 color-grey cursor-not-allowed">Page précédente</div><?php } ?>
-<?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) {
-    $page_s = ($pageActuelle + 1); ?><a href="<?= url_site; ?>/mes-commandes.html?page=<?php echo $page_s; ?>"><div class="bg-grey bg-grey-hover b-r-5 p-5-10" style="float : right;">Page suivante</div></a><?php } else { ?><div class="bg-white b-r-5 p-5-10 color-grey cursor-not-allowed" style="float : right;">Page suivante</div><?php } ?><div class="clear"></div>
+                <?php } ?>
 
+                            </table>
+            <div class="table group-nav">
+                <?php if ($pageActuelle != 1) {
+                    $page_p = ($pageActuelle - 1); ?><a class="navigation-table" href="<?= url_site; ?>/gagnants.html?page=<?php echo $page_p; ?>"><i class="fa fa-angle-left"></i></a><?php } else { ?><i class="fa fa-angle-left"></i><?php } ?>
+                <?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) {
+                    $page_s = ($pageActuelle + 1); ?><a class="navigation-table" href="<?= url_site; ?>/gagnants.html?page=<?php echo $page_s; ?>"><i class="fa fa-angle-right"></i></a><?php } else { ?><i class="fa fa-angle-right"></i><?php } ?> 
+            </div>
+                            <div class="clear"></div> 
+        </div>
     </div>
-</section>
+</div>
 
-<?php
-include('./requiert/inc-footer.php');
+<?php 
+    include('./requiert/new-form/footer.php');
 ?>
