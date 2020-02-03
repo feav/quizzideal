@@ -20,11 +20,17 @@ $mbre_pseudo = $mbrePrenom . " " . $mbreNom;
     }
     .messages-box{
         padding: 0;
-        margin-top: 30px;
         margin-bottom: 35px;
         box-shadow: 0 0 12px 0 rgba(0,0,0,0.06);
         border-radius: 4px;
         background-color: #fff;
+    }
+    .send-new-msg{
+        text-align: right;
+        background: #fff;
+        border-radius: 5px 5px 0 0;
+        padding: 0;
+        padding: 8px 0;
     }
 </style>
 
@@ -52,7 +58,11 @@ $mbre_pseudo = $mbrePrenom . " " . $mbreNom;
 
         if (empty($a)) {
             ?>
-            
+            <div class="col-md-8 col-md-offset-2 send-new-msg" style="text-align : right;">
+                <a href="./messagerie.php?a=send" class="button">
+                    Envoyer un message
+                </a>
+            </div>
             <?php
                 $Cwall = $pdo->query("SELECT COUNT(*) as nbr_entrees FROM messagerie WHERE titre != '' AND (user = '" . $mbre_pseudo . "' OR  user2 = '" . $mbre_pseudo . "')");
                 $Cdones_offer = $Cwall->fetch(PDO::FETCH_ASSOC);
@@ -74,11 +84,7 @@ $mbre_pseudo = $mbrePrenom . " " . $mbreNom;
                     $all_wall = $wall->fetchAll(PDO::FETCH_ASSOC);
                     ?>
                     <div class="messages-box col-md-8 col-md-offset-2">
-                        <div style="text-align : right;">
-                            <a href="./messagerie.php?a=send" class="button" style="text-decoration : none; margin-top: 11px">
-                                Envoyer un message
-                            </a>
-                        </div>
+                        
                         <div class="messages-inbox">
                             <ul>
                                 <?php
