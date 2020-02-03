@@ -1,5 +1,5 @@
+
 <?php 
-    include('./requiert/new-form/header.php');
     include('./requiert/php-form/login-register.php');
     
     $post_reg_mdp = addslashes(htmlentities("123"));
@@ -23,7 +23,7 @@
     ?>
 
 
-    <div class="container">
+    <div class="">
         <div class="row">
             <div>
                 <h2>Bonjour <?= $mbrePrenom; ?></h2>

@@ -5,7 +5,7 @@ $meta_title = 'Quizzdeal.fr : Les missions';
 $meta_description = '';
 
 if (!isset($_SESSION['id'])) {
-    header('Location: /connexion.html');
+    header('Location: /connexion.php');
     exit();
 }
 

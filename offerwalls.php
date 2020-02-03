@@ -4,7 +4,7 @@ include('./requiert/php-global.php');
 $meta_title = 'Quizzdeal.fr : Les offerwalls';
 $meta_description = '';
 
-if (!isset($_SESSION['id'])) { header('Location: /connexion.html'); exit(); }
+if (!isset($_SESSION['id'])) { header('Location: /connexion.php'); exit(); }
 	
 	include('./requiert/inc-head.php');
 	include('./requiert/inc-header-navigation.php');

@@ -28,7 +28,7 @@
         font-weight: 600;
     }
 </style>
-<div class="container" style="margin-top: 25px;">
+<div class="" style="margin-top: 25px;">
     <div class="row">
         <div class="col-md-12">
             <h1 class="title-page">Les derniers gagnants</h1>

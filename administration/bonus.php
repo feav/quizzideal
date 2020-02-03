@@ -16,7 +16,7 @@
                 <!-- HEADLINE -->
                 <div class="headline buttons primary">
                     <h4>Administration bonus</h4>
-                    <a href="<?= url_panel; ?>/bonus.html?action=add" class="button mid-short primary">Ajouter un cadeau</a>
+                    <a href="<?= url_panel; ?>/bonus.php?action=add" class="button mid-short primary">Ajouter un cadeau</a>
                 </div>
                 <!-- /HEADLINE -->
                 <?php
@@ -85,8 +85,8 @@
 
                 <?php endforeach; ?>
 
-                <?php if ($pageActuelle != 1) { $page_p = ($pageActuelle - 1); ?><a href="<?= url_panel; ?>/bonus.html?page=<?php echo $page_p; ?>"><div class="bg-grey bg-grey-hover b-r-5 display-inline-block p-5-10">Page précédente</div></a><?php } else { ?><div class="bg-white b-r-5 display-inline-block p-5-10 color-grey cursor-not-allowed">Page précédente</div><?php } ?>
-                <?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) { $page_s = ($pageActuelle + 1); ?><a href="<?= url_panel; ?>/bonus.html?page=<?php echo $page_s; ?>"><div class="bg-grey bg-grey-hover b-r-5 p-5-10" style="float : right;">Page suivante</div></a><?php } else { ?><div class="bg-white b-r-5 p-5-10 color-grey cursor-not-allowed" style="float : right;">Page suivante</div><?php } ?><div class="clear"></div>
+                <?php if ($pageActuelle != 1) { $page_p = ($pageActuelle - 1); ?><a href="<?= url_panel; ?>/bonus.php?page=<?php echo $page_p; ?>"><div class="bg-grey bg-grey-hover b-r-5 display-inline-block p-5-10">Page précédente</div></a><?php } else { ?><div class="bg-white b-r-5 display-inline-block p-5-10 color-grey cursor-not-allowed">Page précédente</div><?php } ?>
+                <?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) { $page_s = ($pageActuelle + 1); ?><a href="<?= url_panel; ?>/bonus.php?page=<?php echo $page_s; ?>"><div class="bg-grey bg-grey-hover b-r-5 p-5-10" style="float : right;">Page suivante</div></a><?php } else { ?><div class="bg-white b-r-5 p-5-10 color-grey cursor-not-allowed" style="float : right;">Page suivante</div><?php } ?><div class="clear"></div>
 
             </div>
         <!-- /DASHBOARD CONTENT -->
@@ -96,7 +96,7 @@
                 <!-- HEADLINE -->
                 <div class="headline buttons primary">
                     <h4>Administration bonus</h4>
-                    <a href="<?= url_panel; ?>/bonus.html?action=add" class="button mid-short primary">Ajouter un cadeau</a>
+                    <a href="<?= url_panel; ?>/bonus.php?action=add" class="button mid-short primary">Ajouter un cadeau</a>
                 </div>
                 <!-- /HEADLINE -->
                 <!-- FORM BOX ITEM -->

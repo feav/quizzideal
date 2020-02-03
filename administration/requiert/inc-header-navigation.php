@@ -222,7 +222,7 @@ $all_users_idt = $user->fetchAll(PDO::FETCH_ASSOC);
 
         <!-- DROPDOWN ITEM -->
         <li class="dropdown-item">
-            <a href="<?= url_panel; ?>/bonus.html">
+            <a href="<?= url_panel; ?>/bonus.php">
                 <span class="sl-icon icon-notebook"></span>
                 Bonus
             </a>

@@ -12,24 +12,23 @@
 ================================================== -->
 
 <!-- Container / Start -->
-<div class="container" style="margin-top: 50px">
+<div class="" style="margin-top: 50px">
 
     <div class="row">
 
         <!-- Contact Details -->
         <div class="col-md-4">
 
-            <h4 class="headline margin-bottom-30">Find Us There</h4>
+            <h4 class="headline margin-bottom-30">Rejoignez nous</h4>
 
             <!-- Contact Details -->
             <div class="sidebar-textbox">
-                <p>Collaboratively administrate channels whereas virtual. Objectively seize scalable metrics whereas proactive e-services.</p>
+                <p>A chaque jour ses gains et ses cadeaux !!!</strong>. Quizzdeal vous permet à l'aide de simples clics de gagner de l'argent et des cadeaux facilement et rapidement...et surtout gratuitement</p>
 
                 <ul class="contact-details">
-                    <li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>(123) 123-456 </span></li>
-                    <li><i class="im im-icon-Fax"></i> <strong>Fax:</strong> <span>(123) 123-456 </span></li>
-                    <li><i class="im im-icon-Globe"></i> <strong>Web:</strong> <span><a href="#">www.example.com</a></span></li>
-                    <li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#">office@example.com</a></span></li>
+                    <li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>(+33) 766001506 </span></li>
+                    <li><i class="im im-icon-Globe"></i> <strong>Web:</strong> <span><a href="#">www.quizzdeal.fr</a></span></li>
+                    <li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#">jeromerodrigueze@outlook.com</a></span></li>
                 </ul>
             </div>
 

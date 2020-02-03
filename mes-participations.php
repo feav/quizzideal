@@ -23,7 +23,7 @@
     ?>
 
 
-    <div class="container">
+    <div class="">
         <div class="row">
             <div>
                 <h2>Bonjour <?= $mbrePrenom; ?></h2>
@@ -90,7 +90,7 @@
         font-weight: 600;
     }
 </style>
-<div class="container" style="margin-top: 25px;">
+<div class="" style="margin-top: 25px;">
     <div class="row">
         <div class="col-md-12">
             <h1 class="title-page">Historique de mes participations</h1>

@@ -23,7 +23,7 @@
     ?>
 
 
-    <div class="container">
+    <div class="">
         <div class="row">
             <div>
                 <h2>Bonjour <?= $mbrePrenom; ?></h2>
@@ -90,7 +90,7 @@
         font-weight: 600;
     }
 </style>
-<div class="container" style="margin-top: 25px;">
+<div class="" style="margin-top: 25px;">
     <div class="row">
         <div class="col-md-12">
             <h1 class="title-page">Historique de mes Commandes</h1>
@@ -150,7 +150,6 @@
                 <?php if (($pageActuelle == 1 AND $nombreDePages > $pageActuelle) OR $nombreDePages > $pageActuelle) {
                     $page_s = ($pageActuelle + 1); ?><a class="navigation-table" href="<?= url_site; ?>/gagnants.html?page=<?php echo $page_s; ?>"><i class="fa fa-angle-right"></i></a><?php } else { ?><i class="fa fa-angle-right"></i><?php } ?> 
             </div>
-                            <div class="clear"></div> 
         </div>
     </div>
 </div>
