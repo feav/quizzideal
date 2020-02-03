@@ -152,6 +152,25 @@ if (isset($_SESSION['id'])) {
 			<div class="dashboard-nav-inner">
 
 				<ul data-submenu-title="Main">
+					<li>
+						
+					<div>
+						<a href="#" id="info-prcnt"><div class="float m-b-10 f-s-13 f-w-light transition-1s color-white p-10-20 b-r-5 b-special-grey">
+                                <progress id="avancement" value="4" max="100" style="width:80%;"></progress>
+                                <span id="description-barre" style="float: right;"><i class="fa fa-info p-5 bg-blue bg-blue-hover b-r-50 width-10"></i></span> <script type="text/javascript">
+                                    document.querySelector('span#description-barre').onclick = function () {
+                                        swal({
+                                            text: "Vous avez rempli <?= $mbreBarrePrcnt; ?>% de la barre de bonus.\n\nEncore un petit effort, car une fois à 100%, vous serez crédité automatiquement de 2 euros !!!",
+                                            button: "Fermer",
+                                            closeOnClickOutside: false,
+                                            closeOnEsc: false
+                                        });
+                                    };
+                                </script>
+                            </div></a>
+                    </div>
+					</li>
+
 					<li class="active"><a  href="index.php"><i class="sl sl-icon-settings"></i> Acceuil</a></li>
 					<li><a  href="messagerie.php"><i class="sl sl-icon-envelope-open"></i> Messages <span class="nav-tag messages"><?= $nb_MsgNonLu['nbr_entrees']; ?></span></a></li>
 					<li><a <?= isset($_SESSION['email_offre']) && $_SESSION['ip'] == $_SERVER['REMOTE_ADDR'] ? 'href="./livredor.php"' : 'href="./infos.php"'?>><i class="sl sl-icon-envelope-open"></i>Livre d'Or</a>
@@ -165,10 +184,10 @@ if (isset($_SESSION['id'])) {
 					<li><a href="./mes-commandes.php"><i class="fa fa-1x fa-list"></i>Commandes</a></li>
 					<li><a href="./mes-participations.php"><i class="fa fa-1x fa-list"></i>Participations</a></li>
 					<li><a href="./coupons.php">  <i class="fa fa-1x fa-money"></i>Coupons</a></li>
-					<li><a href="cashback.php"><i class="fa fa-1x fa-money"></i>CashBack</a></li>
-					<li><a href="offerwalls.php?ow=adgem"> <i class="fa fa-1x fa-money"></i>OfferWalls</a></li>
+					<li><a href="./cashback.php"><i class="fas fa-1x fa-money"></i>CashBack</a></li>
+					<li><a href="./offerwalls.php?ow=adgem" > <i class="fas fa-1x fa-money"></i>OfferWalls</a></li>
 				</ul>	
-
+ 
 				<ul data-submenu-title="Account">
 					<!-- <li><a href="dashboard-my-profile.html"><i class="sl sl-icon-user"></i> My Profile</a></li> -->
 					<li><a  href="./index.php?action=logout"><i class="sl sl-icon-power"></i> Deconnexion</a></li>
