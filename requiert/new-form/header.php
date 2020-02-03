@@ -166,7 +166,7 @@ if (isset($_SESSION['id'])) {
 					<li><a href="./mes-participations.php"><i class="fa fa-1x fa-list"></i>Participations</a></li>
 					<li><a href="./coupons.php">  <i class="fa fa-1x fa-money"></i>Coupons</a></li>
 					<li><a href="cashback.php"><i class="fa fa-1x fa-money"></i>CashBack</a></li>
-					<li><a href="OfferWalls.php?ow=adgem"> <i class="fa fa-1x fa-money"></i>OfferWalls</a></li>
+					<li><a href="offerwalls.php?ow=adgem"> <i class="fa fa-1x fa-money"></i>OfferWalls</a></li>
 				</ul>	
 
 				<ul data-submenu-title="Account">
