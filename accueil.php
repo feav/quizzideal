@@ -2,7 +2,10 @@
     include('./requiert/new-form/header.php');
     include('./requiert/php-form/login-register.php');
     
-    
+    if (!isset($_SESSION['id'])) {
+         header('Location: /connexion.php');
+          exit();
+     }
         $sql = "SELECT * FROM parrainage WHERE id = 1";
         $req = $pdo->query($sql);
         $par = $req->fetch(PDO::FETCH_ASSOC);

@@ -203,7 +203,7 @@ if (isset($_SESSION['id'])) {
 
 				</ul>	
  
-				<ul data-submenu-title="Account">
+				<ul>
 					<!-- <li><a href="dashboard-my-profile.html"><i class="sl sl-icon-user"></i> My Profile</a></li> -->
 					<li><a  href="./index.php?action=logout"><i class="sl sl-icon-power"></i> Deconnexion</a></li>
 				</ul>

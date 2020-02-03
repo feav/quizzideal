@@ -119,49 +119,6 @@
 <?php } ?>
 
 
-
-<div class="container">
-	<div class="row">
-				
-		<!-- Listings -->
-		<div class="col-md-8 col-md-offset-2">
-			<p>
-				Bienvenue sur le chatroom de GPTBonus <b><?php echo $mbreNom." ".$mbrePrenom ?></b>
-			</p>
-			<div class="messages-container margin-top-0">
-				<div class="messages-headline">
-					Moderateur: <h4>Krisjul</h4>
-				</div>
-
-				<div class="messages-container-inner">
-
-					<!-- Message Content -->
-					<div style="width: 100%">
-						<div class="message-content">
-							
-						</div>
-
-						<!-- Reply Area -->
-						<div class="clearfix"></div>
-						<?php if ($mbreNom != '' && $mbrePrenom != '') { ?>
-							<form id="form">
-								<div class="message-reply">
-									<textarea id="msg" name="message" cols="40" rows="3" placeholder="Entrez votre message ici"></textarea>
-									<input id="send" type="submit" name="submit" value="Envoyer mon message" class="submit button bg-blue bg-blue-hover color-white f-w-400 f-s-12 b-r-50" />
-								</div>
-								</form>
-							<?php } ?>
-						
-					</div>
-					<!-- Message Content -->
-
-				</div>
-
-			</div>
-
-		</div>
-	</div>
-</div>
 <?php
 	} 
 ?>

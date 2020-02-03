@@ -69,7 +69,7 @@
                         $boutique_image=  strpos($dones_debits['image'], 'http') !== false ? $dones_debits['image'] : '/img/' . $dones_debits['image'];
                     ?>
                     <!-- Listing Item -->
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-5">
                         <a class="">
                             <div class="listing-item">
                                 <span class="blog-item-tag"><?php echo $dones_debits['cashback'];?></span>
